@@ -72,7 +72,7 @@ To resolve the issue, the DNS configuration was updated (sudo nano /etc/resolv.c
 <img width="729" height="389" alt="Untitled" src="https://github.com/user-attachments/assets/227990eb-e744-4ca9-ab8b-a69caa0b87a5" />
 
 
-This Unbuntu VM will act as an attacker. Microsoft Defender was disabled on windows VM to allow controlled malware simulation and C2 execution without interference.
+This Unbuntu VM will simulate adversary activity within the lab environment. Microsoft Defender was disabled on windows VM to allow controlled malware simulation and C2 execution without interference.
 
 Sysmon was installed to improve endpoint visibility and generate detailed telemetry.
 
@@ -152,8 +152,18 @@ The rule successfully detected the activity and terminated the shell session, de
 
 ![Screenshot (24)](https://github.com/user-attachments/assets/3cd1adb0-4b54-4fce-bb40-bb93b8689fb0)
 
-# Conclusion 
+## Conclusion 
 
 This project shows the importance of endpoint visibility, telemetry analysis, and detection tuning when identifying and responding to malicious activity within enterprise environments.
 
 By combining attack simulation with defensive monitoring and automated response capabilities, the lab demonstrated how modern SOC workflows can be used to detect and mitigate threats in real time.
+# Lessons Learned
+Improved understanding of endpoint telemetry collection and analysis
+
+Learned how to build and tune LimaCharlie D&R rules
+
+Gained hands-on experience with attack simulation and defensive monitoring
+
+Better understanding of SOC workflows and incident response processes
+
+(All testing and attack simulation activities were performed within an isolated virtual lab environment for educational purposes)
