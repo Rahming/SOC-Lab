@@ -51,8 +51,6 @@ T1059	   |    Command and Scripting Interpreter |	PowerShell and command executi
 
 T1105	   |    Ingress Tool Transfer	            | Payload download from attacker VM
 
-
-## Steps
 # PART 1 - Environment Setup
 The first phase focused on building the virtual lab environment
 VMware Workstation Pro was used to create both the Ubuntu attacker machine and the Windows 11 victim machine.
