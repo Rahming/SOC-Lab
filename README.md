@@ -150,7 +150,8 @@ Part 4 is about blocking attacks. First I did the following command for Lima Cha
 
 vssadmin delete shadows /all
 
-![Screenshot (21)](https://github.com/user-attachments/assets/bd354601-018c-46fc-9eda-9fa2d1a5ca5f)
+<img width="818" height="221" alt="Screenshot (119)" src="https://github.com/user-attachments/assets/f741bccc-694c-4940-81e1-f3e0865980af" />
+
 
 ![Screenshot (22)](https://github.com/user-attachments/assets/c2e071f6-d62f-4d41-af42-a06be25fbb49)
 
