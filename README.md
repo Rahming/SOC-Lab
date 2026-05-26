@@ -12,30 +12,30 @@ Link to the Project (https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst
 
 ### Skills Learned
 
-1.SOC Environment Configuration
+1. SOC Environment Configuration
 
-2.Threat Dectection and Analysis
+2. Threat Dectection and Analysis
 
-3.Detection & Response Rule Creation
+3. Detection & Response Rule Creation
 
-4.Endpoint Telemetry investigation
+4. Endpoint Telemetry investigation
 
-5.Incident Response and Threat Mitigation
+5. Incident Response and Threat Mitigation
 
 6.Security Event Monitoring and Reporting
 ### Tools Used
 
-1.VMware Workstation Pro
+1. VMware Workstation Pro
 
-2.Ubuntu Server 22.04 LTS
+2. Ubuntu Server 22.04 LTS
 
-3.Windows 11 VM
+3. Windows 11 VM
 
-4.LimaCharlie EDR Platform
+4. LimaCharlie EDR Platform
 
-5.Sysmon
+5. Sysmon
 
-6.Sliver C2
+6. Sliver C2
 
 ### Relevant MITRE ATT&CK Techniques
 
@@ -100,13 +100,13 @@ Once executed, the Sliver server established an active C2 session with the victi
 
 The successful callback generated endpoint telemetry within LimaCharlie, including:
 
-1.Process execution events
+1. Process execution events
 
-2.Network connection telemetry
+2. Network connection telemetry
 
-3.Windows Event Log activity
+3. Windows Event Log activity
 
-4.Command-line execution data
+4. Command-line execution data
 
 The telemetry was reviewed within LimaCharlie’s Timeline and Network views to validate visibility into the simulated attack activity.
 ![Screenshot (19)](https://github.com/user-attachments/assets/98a6d627-e8a9-426b-8eb5-4bf4c50ed02f)
